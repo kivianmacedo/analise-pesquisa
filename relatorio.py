@@ -30,8 +30,6 @@ if arquivo is not None:
             respostas7 = dados[pergunta7]
             pergunta8 = colunas[8]
             respostas8 = dados[pergunta8]
-            pergunta9 = colunas[9]
-            respostas9 = dados[pergunta9]
 
             prompt = f"""   
             Você é um especialista em experiência e satisfação do cliente.
@@ -68,10 +66,6 @@ if arquivo is not None:
             PERGUNTA 8: {pergunta8}
             RESPOSTAS:
             {respostas8}
-            
-            PERGUNTA 9: {pergunta9}
-            RESPOSTAS:
-            {respostas9}
 
             Com base nas respostas, faça um relatório abordando os seguintes tópicos:
             1. Nível Geral de Satisfação: Como os clientes estão se sentindo em relação a cada pergunta?
