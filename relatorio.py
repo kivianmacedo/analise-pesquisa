@@ -28,7 +28,7 @@ if arquivo is not None:
             3. O que precisa mudar: Aponte as principais reclamações e dê sugestões práticas de melhorias.
         """
 
-            resposta = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)  # mandar para o gemini
+            resposta = client.models.generate_content(model="gemini-1.5-flash", contents=prompt)  # mandar para o gemini
       
             st.write(resposta.text)
       
