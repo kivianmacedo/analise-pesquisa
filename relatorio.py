@@ -19,40 +19,11 @@ if arquivo is not None:
             Você é um especialista em experiência e satisfação do cliente.
             Analise as respostas da pesquisa abaixo e elabore um relatório claro:
 
-            PERGUNTA 1: {pergunta1}
-            RESPOSTAS:
-            {respostas1}
-
-            PERGUNTA 2: {pergunta2}
-            RESPOSTAS:
-            {respostas2}
-
-            PERGUNTA 3: {pergunta3}
-            RESPOSTAS:
-            {respostas3}
-
-            PERGUNTA 4: {pergunta4}
-            RESPOSTAS:
-            {respostas4}
-
-            PERGUNTA 5: {pergunta5}
-            RESPOSTAS:
-            {respostas5}
-
-            PERGUNTA 6: {pergunta6}
-            RESPOSTAS:
-            {respostas6}
-
-            PERGUNTA 7: {pergunta7}
-            RESPOSTAS:
-            {respostas7}
-
-            PERGUNTA 8: {pergunta8}
-            RESPOSTAS:
-            {respostas8}
+            DADOS DA PESQUISA:
+            {texto_dados}
 
             Com base nas respostas, faça um relatório abordando os seguintes tópicos:
-            1. Nível Geral de Satisfação: Como os clientes estão se sentindo em relação a cada pergunta?
+            1. Nível geral de satisfação dos clientes: como eles estão se sentindo em relação a cada pergunta?
             2. O que já está bom: Liste os pontos positivos e elogios que devem ser mantidos.
             3. O que precisa mudar: Aponte as principais reclamações e dê sugestões práticas de melhorias.
         """
