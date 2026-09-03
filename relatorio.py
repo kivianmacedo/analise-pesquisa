@@ -13,23 +13,7 @@ if arquivo is not None:
       st.write("A planilha foi carregada com sucesso.")
       if st.button("Gerar relatório da pesquisa com o Gemini"):
             st.write("O Gemini está montando seu relatório. Aguarde.") 
-            colunas = dados.columns
-            pergunta1 = colunas[1]     # pegar perguntas e respostas da planilha
-            respostas1 = dados[pergunta1]
-            pergunta2 = colunas[2]
-            respostas2 = dados[pergunta2]
-            pergunta3 = colunas[3]
-            respostas3 = dados[pergunta3]
-            pergunta4 = colunas[4]
-            respostas4 = dados[pergunta4]
-            pergunta5 = colunas[5]
-            respostas5 = dados[pergunta5]
-            pergunta6 = colunas[6]
-            respostas6 = dados[pergunta6]
-            pergunta7 = colunas[7]
-            respostas7 = dados[pergunta7]
-            pergunta8 = colunas[8]
-            respostas8 = dados[pergunta8]
+            texto_dados = dados.to_string()
 
             prompt = f"""   
             Você é um especialista em experiência e satisfação do cliente.
