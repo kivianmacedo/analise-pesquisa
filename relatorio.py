@@ -6,32 +6,32 @@ st.set_page_config(page_title="Relatório de Pesquisas")
 st.title("Relatório de Pesquisas de Satisfação")
 st.write("Olá! Irei analisar os resultados da sua pesquisa de satisfação e gerar um relatório com os dados e sugestões.")
 client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])   # conectar com a ia
-arquivo = st.file_uploader("Envie a planilha com os dados da sua pesquisa", type=[".xlsx"])
+arquivo = st.file_uploader("Envie a planilha com os dados da sua pesquisa", type=["xlsx"])
 
 if arquivo is not None:
       dados = pd.read_excel(arquivo)
       st.write("A planilha foi carregada com sucesso.")
       if st.button("Gerar relatório da pesquisa com o Gemini"):
             st.write("O Gemini está montando seu relatório. Aguarde.") 
-            colunas = arquivo.columns
+            colunas = dados.columns
             pergunta1 = colunas[1]     # pegar perguntas e respostas da planilha
-            respostas1 = tabela[pergunta1]
+            respostas1 = dados[pergunta1]
             pergunta2 = colunas[2]
-            respostas2 = tabela[pergunta2]
+            respostas2 = dados[pergunta2]
             pergunta3 = colunas[3]
-            respostas3 = tabela[pergunta3]
+            respostas3 = dados[pergunta3]
             pergunta4 = colunas[4]
-            respostas4 = tabela[pergunta4]
+            respostas4 = dados[pergunta4]
             pergunta5 = colunas[5]
-            respostas5 = tabela[pergunta5]
+            respostas5 = dados[pergunta5]
             pergunta6 = colunas[6]
-            respostas6 = tabela[pergunta6]
+            respostas6 = dados[pergunta6]
             pergunta7 = colunas[7]
-            respostas7 = tabela[pergunta7]
+            respostas7 = dados[pergunta7]
             pergunta8 = colunas[8]
-            respostas8 = tabela[pergunta8]
+            respostas8 = dados[pergunta8]
             pergunta9 = colunas[9]
-            respostas9 = tabela[pergunta9]
+            respostas9 = dados[pergunta9]
 
             prompt = f"""   
             Você é um especialista em experiência e satisfação do cliente.
