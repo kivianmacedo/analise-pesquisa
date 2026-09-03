@@ -10,7 +10,7 @@ arquivo = st.file_uploader("Envie a planilha com os dados da sua pesquisa", type
 
 if arquivo is not None:
       dados = pd.read_excel(arquivo)
-      st.write("A planilha foi carregada com sucesso.)
+      st.write("A planilha foi carregada com sucesso.")
       if st.button("Gerar relatório da pesquisa com o Gemini"):
             st.write("O Gemini está montando seu relatório. Aguarde.") 
             colunas = tabela.columns
