@@ -13,7 +13,7 @@ if arquivo is not None:
       st.write("A planilha foi carregada com sucesso.")
       if st.button("Gerar relatório da pesquisa com o Gemini"):
             st.write("O Gemini está montando seu relatório. Aguarde.") 
-            colunas = tabela.columns
+            colunas = arquivo.columns
             pergunta1 = colunas[1]     # pegar perguntas e respostas da planilha
             respostas1 = tabela[pergunta1]
             pergunta2 = colunas[2]
