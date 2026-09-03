@@ -3,7 +3,7 @@ import pandas as pd
 from google import genai
 
 st.set_page_config(page_title="Relatório de Pesquisas")
-st.title("Relatório de Pesquisas de Satisfação)
+st.title("Relatório de Pesquisas de Satisfação")
 st.write("Olá! Irei analisar os resultados da sua pesquisa de satisfação e gerar um relatório com os dados e sugestões.")
 client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])   # conectar com a ia
 arquivo = st.file_uploader("Envie a planilha com os dados da sua pesquisa", type=[.xlsx])
