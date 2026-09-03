@@ -36,7 +36,7 @@ if arquivo is not None:
         """
 
             try:
-                resposta = client.models.generate_content(model="gemini-1.5-flash", contents=prompt)
+                resposta = client.models.generate_content(model="gemini-2.5-pro", contents=prompt)
                 st.write(resposta.text)
             
             except Exception as e:
