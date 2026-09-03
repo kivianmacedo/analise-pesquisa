@@ -35,13 +35,13 @@ if arquivo is not None:
             3. O que precisa mudar: Aponte as principais reclamações e dê sugestões práticas de melhorias.
         """
 
-           try:
-               resposta = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
-               st.write(resposta.text)
-           
-           except Exception as e:
-               st.error("Falha ao comunicar com a API do Gemini.")
-               st.code(str(e))
+            try:
+                resposta = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
+                st.write(resposta.text)
+            
+            except Exception as e:
+                st.error("Falha ao comunicar com a API do Gemini.")
+                st.code(str(e))
             
       
        
