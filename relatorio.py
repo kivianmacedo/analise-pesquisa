@@ -33,6 +33,7 @@ if arquivo is not None:
             1. Nível geral de satisfação dos clientes: como eles estão se sentindo em relação a cada pergunta?
             2. O que já está bom: Liste os pontos positivos e elogios que devem ser mantidos.
             3. O que precisa mudar: Aponte as principais reclamações e dê sugestões práticas de melhorias.
+            4. Como os gestores da clínica podem atuar para melhorar a satisfação dos clientes?
         """
             
             resposta = client.models.generate_content(model="gemini-3.6-flash", contents=prompt)
